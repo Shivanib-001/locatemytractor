@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 import threading  
 import json 
 import time  
-import certifi  
 import flask 
 import os  
 # Initialize the Flask application
@@ -13,7 +12,7 @@ app = Flask(__name__)
 # Set a secret key for session management
 app.secret_key = os.urandom(24) 
 # Connect to MongoDB using MongoClient
-client = MongoClient("mongodb+srv://aarushibawejaji:test@cluster0.imgm1l7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",tlsCAFile=certifi.where())
+client = MongoClient("mongodb+srv://aarushibawejaji:test@cluster0.imgm1l7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 # Select the database and collection
 db = client["tractor"]
 collection = db["6055"]
