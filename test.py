@@ -14,10 +14,6 @@ connection_string = "mongodb+srv://aarushibawejaji:test@cluster0.imgm1l7.mongodb
 client=MongoClient(connection_string);
 db = client["tractor"]
 collection = db["6065"]
-'''client = MongoClient("mongodb+srv://test:test@cluster0.ku7dsnu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-db = client["test_ros"]
-collection = db["test1"]'''
-
 
 def watch_changes():
     global selected_tractor, selected_duration
